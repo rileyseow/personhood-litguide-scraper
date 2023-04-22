@@ -7,15 +7,16 @@ Scraping Specifications:
 - 95 pages of ~12 novels per page
 - Compiles all character data for each novel and writes it to .csv files
 - Novel csv headers: 
-    - novel_url
-    - title
-    - author
+    - Novel ID
+    - Novel URL
+    - Title
+    - Author
     - POV
 - Character csv headers:
-    - novel_url
-    - character_url
-    - character_name
-    - character_desc
+    - Novel ID
+    - Character URL
+    - Character Name
+    - Character Description
 
 Uses imports requests, csv, re, and of course BeautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc).
 
