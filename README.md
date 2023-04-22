@@ -12,6 +12,8 @@ Scraping Specifications:
     - Title
     - Author
     - POV
+        - "EXC CODE 1": Link to a POV page for the novel was not found in the LH navbar
+        - "EXC CODE 2": Link to a POV page for the novel was found, but was not succinctly summarized in a header. Usually involves long paragraph description text on the POV page. Recommended: manual correction during data clean-up.
 - Character csv headers:
     - Novel ID
     - Character URL
