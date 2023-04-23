@@ -20,7 +20,7 @@ Scraping Specifications:
     - Character Name
     - Character Description
 
-Uses imports requests, csv, re, and of course BeautifulSoup (https://www.crummy.com/software/BeautifulSoup/bs4/doc).
+Uses imports requests, csv, re, and BeautifulSoup (https://beautiful-soup-4.readthedocs.io/en/latest/).
 
 Originally written for the Literary Lab as part of a CESTA internship (Summer 2020). Being redone now for practice purposes.
 

@@ -2,37 +2,38 @@
 File: Scrapes selected data from all novels on the Shmoop Literature Study Guides website.
       Creates and writes to csv file.
 
-Global TODOs: (1) improve speed
-              (2) implement error-checking
+Global TODOs: (1) implement error-checking
+              (2) improve efficiency with profiler
 """
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, SoupStrainer
 import csv
 import re
+import charset_normalizer
 
 """
 Function: findNovelPov
 Description: Finds Novel POV data if exists
-Parameters: BeautifulSoup object (to parse)
+Parameters: BeautifulSoup object (to parse), requests Session object to make a get request
 Return: String with POV Description
         "EXC CODE 1" if POV href cannot be found
         "EXC CODE 2" if POV href exists but is not defined succinctly (requires manually navigating to 
         the POV page and looking at description paragraph text)
 """
-def scrapePOVData(soupObj):
+def scrapePOVData(soupObj, requests_session):
     pov_url = soupObj.find("a", href=re.compile("narrator-point-of-view$"))
     if pov_url is None: return "EXC CODE 1"
 
     pov_url = pov_url.get("href")
     # Account for relative hrefs
     if (pov_url[0] == '/'):
-        pov_url = "https://www.shmoop.com"+ pov_url
+        pov_url = "https://www.shmoop.com" + pov_url
 
-    # Navigate to the POV url page
-    response = requests.get(pov_url)
+    # Navigate to the POV page
+    response = requests_session.get(pov_url)
     html = response.text
-    soupObj = BeautifulSoup(html, "html.parser")
+    soupObj = BeautifulSoup(html, "lxml", parse_only=SoupStrainer("h3"))
 
     pov = soupObj.find("h3")
     if pov is None: return "EXC CODE 2"
@@ -52,11 +53,14 @@ def writeCSV(writer, row):
     # Return dummy value for now
     return 0
 
+
 def main():
     # Initialize values
     root_url = "https://www.shmoop.com/study-guides/literature"
     # Novel ID counter
     id = 0
+    # Requests Session Object for all get requests
+    requests_session = requests.Session()
     # CSV file with headers
     f = open("shmoop_novel_data.csv", "w")
     writer = csv.writer(f)
@@ -64,17 +68,17 @@ def main():
     writeCSV(writer, header)
 
     # Go through all pages of Literature Study Guides (95x)
-    for i in range(1, 3): #change to 96
+    for i in range(1, 96):
         page_url = root_url + "/index/?p=" + str(i)
 
         # Generate BeautifulSoup object to parse the page
-        response = requests.get(page_url)
+        response = requests_session.get(page_url)
         html = response.text
-        soup = BeautifulSoup(html, "html.parser")
+        soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["a", "div"]))
 
         # Find all novel URLs and titles on the page
-        urls = soup.findAll("a", attrs={"class": "details"})
-        titles = soup.findAll("div", attrs={"class": "item-info"})
+        urls = soup.findAll("a", class_="details")
+        titles = soup.findAll("div", class_="item-info")
 
         # For each novel on the page...
         for url, title in zip(urls, titles):
@@ -82,25 +86,26 @@ def main():
 
             # Store the first three values in a list: ID, URL, and Title
             ch = [id, novel_url, title.text.strip()]
-            id += 1
 
             # Print status data to console
-            print("Currently scraping novel with ID ", str(id))
+            if id % 5 == 0: print("scraping novel ", str(id))
+            # Increment Novel ID counter
+            id += 1
 
             # Navigate to each novel's page with BeautifulSoup
             # Then add Author and POV to the list of values
-            response = requests.get(novel_url)
+            response = requests_session.get(novel_url)
             html = response.text
-            soup = BeautifulSoup(html, "html.parser")
+            soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["span", "div"]))
 
             # Look for author info
-            author = soup.find("span", attrs={"class": "author-name"}).text.strip()
+            author = soup.find("span", class_="author-name").text.strip()
             ch.append(author)
 
             # Look for POV info
             # Narrows down HTML area to LH nav bar for parsing
-            analysisBarSoupObj = soup.find("div", attrs={"class": "nav-menu"})
-            pov = scrapePOVData(analysisBarSoupObj)
+            analysisBarSoupObj = soup.find("div", class_="nav-menu")
+            pov = scrapePOVData(analysisBarSoupObj, requests_session)
             ch.append(pov)
 
             # Write the entire row of data to the CSV file

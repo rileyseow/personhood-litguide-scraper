@@ -24,3 +24,402 @@ Novel ID,Novel URL,Title,Author,POV
 21,https://www.shmoop.com/study-guides/literature/hunger-artist,A Hunger Artist,Franz Kafka,Third Person (Omniscient)
 22,https://www.shmoop.com/study-guides/literature/a-lesson-before-dying,A Lesson Before Dying,Ernest J. Gaines,First Person (Central Narrator)
 23,https://www.shmoop.com/study-guides/literature/a-little-less-girl,A Little Less Girl,Tess Oliver,First Person (Central)
+24,https://www.shmoop.com/study-guides/literature/little-princess,A Little Princess,Frances Hodgson Burnett,Third-Person Omniscient
+25,https://www.shmoop.com/study-guides/literature/long-way-from-chicago,A Long Way from Chicago,Richard Peck,First Person (Central Narrator)
+26,https://www.shmoop.com/study-guides/literature/a-long-way-gone,A Long Way Gone: Memoirs of a Boy Soldier,Ishmael Beah,"First Person, Central Narrator"
+27,https://www.shmoop.com/study-guides/literature/a-man-for-all-seasons-book,A Man for All Seasons,Robert Bolt,EXC CODE 1
+28,https://www.shmoop.com/study-guides/literature/mango-shaped-space,A Mango-Shaped Space,Wendy Mass,First Person (Central)
+29,https://www.shmoop.com/study-guides/literature/midsummer-nights-dream,A Midsummer Night's Dream,William Shakespeare,EXC CODE 1
+30,https://www.shmoop.com/study-guides/literature/a-million-little-pieces,A Million Little Pieces,James Frey,EXC CODE 1
+31,https://www.shmoop.com/study-guides/literature/a-modest-proposal,A Modest Proposal,Jonathan Swift,First Person (Central Narrator): The Proposer
+32,https://www.shmoop.com/study-guides/literature/monster-calls,A Monster Calls,Patrick Ness,Third Person (Limited Omniscient)
+33,https://www.shmoop.com/study-guides/literature/a-northern-light,A Northern Light,Jennifer Donnelly,First Person (Central Narrator) / Mattie Gokey
+34,https://www.shmoop.com/study-guides/literature/passage-to-india,A Passage to India,E.M. Forster,Third Person/Omniscient
+35,https://www.shmoop.com/study-guides/literature/perfect-day-for-bananafish,A Perfect Day for Bananafish,J.D. Salinger,Third Person (Omniscient); but also First Person (Peripheral Narrator)
+36,https://www.shmoop.com/study-guides/literature/portrait-of-the-artist-as-a-young-man,A Portrait of the Artist as a Young Man,James Joyce,"Third Person (Limited Omniscient), then First Person"
+37,https://www.shmoop.com/study-guides/literature/owen-meany,A Prayer for Owen Meany,John Irving,First Person (Limited)
+38,https://www.shmoop.com/study-guides/literature/a-raisin-in-the-sun,A Raisin in the Sun,Lorraine Hansberry,EXC CODE 1
+39,https://www.shmoop.com/study-guides/literature/room-of-ones-own,A Room of One's Own,Virginia Woolf,First Person Central
+40,https://www.shmoop.com/study-guides/literature/room-with-a-view,A Room with a View,E.M. Forster,Third Person Omniscient
+41,https://www.shmoop.com/study-guides/literature/a-rose-for-emily,A Rose for Emily,William Faulkner,First Person (Peripheral Narrator)
+42,https://www.shmoop.com/study-guides/literature/a-russian-beauty,A Russian Beauty,Vladimir Nabokov,Third Person (Omniscient)
+43,https://www.shmoop.com/study-guides/literature/separate-peace,A Separate Peace,John Knowles,First Person (Central Narrator)
+44,https://www.shmoop.com/study-guides/literature/a-simple-heart,A Simple Heart,Gustave Flaubert,Third Person (Limited Omniscient)
+45,https://www.shmoop.com/study-guides/literature/a-small-place,A Small Place,Jamaica Kincaid,Second Person
+46,https://www.shmoop.com/study-guides/literature/a-step-from-heaven,A Step from Heaven,An Na,First Person (Central Narrator) / Young Ju Park
+47,https://www.shmoop.com/study-guides/literature/streetcar-named-desire,A Streetcar Named Desire,Tennessee Williams,EXC CODE 2
+48,https://www.shmoop.com/study-guides/literature/tale-of-two-cities,A Tale of Two Cities,Charles Dickens,Third Person Omniscient
+49,https://www.shmoop.com/study-guides/literature/a-thousand-splendid-suns,A Thousand Splendid Suns,Khaled Hosseini,EXC CODE 1
+50,https://www.shmoop.com/study-guides/literature/a-tree-grows-in-brooklyn,A Tree Grows in Brooklyn,Betty Smith,Third Person (Omniscient)
+51,https://www.shmoop.com/study-guides/literature/very-old-man-enormous-wings,A Very Old Man with Enormous Wings,Gabriel García Márquez,Third Person (Limited Omniscient)
+52,https://www.shmoop.com/study-guides/literature/view-from-the-bridge,A View from the Bridge,Arthur Miller,First Person Peripheral Narrator
+53,https://www.shmoop.com/study-guides/literature/a-vindication-of-the-rights-of-woman,A Vindication of the Rights of Woman,Mary Wollstonecraft,First-Person (Central)
+54,https://www.shmoop.com/study-guides/literature/walk-in-the-woods,A Walk in the Woods,Bill Bryson,EXC CODE 1
+55,https://www.shmoop.com/study-guides/literature/a-white-heron,A White Heron,Sarah Orne Jewett,Third Person (Omniscient)
+56,https://www.shmoop.com/study-guides/literature/wizard-of-earthsea,A Wizard of Earthsea,Ursula K. Le Guin,EXC CODE 1
+57,https://www.shmoop.com/study-guides/literature/a-worn-path,A Worn Path,Eudora Welty,Third Person (Limited Omniscient)
+58,https://www.shmoop.com/study-guides/literature/a-wrinkle-in-time,A Wrinkle in Time,Madeleine L'Engle,Third Person (Limited Omniscient)
+59,https://www.shmoop.com/study-guides/literature/a-year-down-yonder,A Year Down Yonder,Richard Peck,First Person (Central Narrator)
+60,https://www.shmoop.com/study-guides/literature/ap-updike,A&P,John Updike,EXC CODE 2
+61,https://www.shmoop.com/study-guides/literature/abraham-lincoln-vampire-hunter-book,Abraham Lincoln: Vampire Hunter,Seth Grahame-Smith,Third Person (Omniscient)/First Person (Peripheral Narrator)
+62,https://www.shmoop.com/study-guides/literature/absalom-absalom-faulkner,"Absalom, Absalom!",William Faulkner,Multiple (and boy do we mean multiple) Narrators
+63,https://www.shmoop.com/study-guides/literature/across-five-aprils,Across Five Aprils,Irene Hunt,Third Person (Omniscient)
+64,https://www.shmoop.com/study-guides/literature/adam-bede,Adam Bede,George Eliot,Third Person Omniscient
+65,https://www.shmoop.com/study-guides/literature/huckleberry-finn,Adventures of Huckleberry Finn,Mark Twain,First Person (Central Narrator)
+66,https://www.shmoop.com/study-guides/literature/agamemnon,Agamemnon,Aeschylus,"Third Person (Objective), Third Person (Limited Omniscient)"
+67,https://www.shmoop.com/study-guides/literature/age-of-iron,Age of Iron,J.M. Coetzee,First Person (Central)
+68,https://www.shmoop.com/study-guides/literature/airborn,Airborn,Kenneth Oppel,First Person (Central Narrator)/ Matt Cruse
+69,https://www.shmoop.com/study-guides/literature/al-capone-does-my-shirts,Al Capone Does My Shirts,Gennifer Choldenko,First Person (Central)
+70,https://www.shmoop.com/study-guides/literature/alanna,Alanna: The First Adventure,Tamora Pierce,Third Person (Limited Omniscient): Alanna
+71,https://www.shmoop.com/study-guides/literature/alas-babylon,"Alas, Babylon",Pat Frank,Third Person (Omniscient)
+72,https://www.shmoop.com/study-guides/literature/alex-cross-trial,Alex Cross's Trial,James Patterson and Richard DiLallo,First Person (Central)
+73,https://www.shmoop.com/study-guides/literature/alexander-and-the-terrible-horrible-no-good-very-bad-day,"Alexander and the Terrible, Horrible, No Good, Very Bad Day",Judith Viorst,First Person (Central Narrator)
+74,https://www.shmoop.com/study-guides/literature/alice-in-wonderland-looking-glass,Alice's Adventures in Wonderland and Through the Looking-Glass,Lewis Carroll,Third Person (Limited Omniscient)
+75,https://www.shmoop.com/study-guides/literature/all-my-sons,All My Sons,Arthur Miller,EXC CODE 1
+76,https://www.shmoop.com/study-guides/literature/all-quiet-on-western-front,All Quiet on the Western Front,Erich Maria Remarque,First Person (Central Narrator) and Third Person (Objective)
+77,https://www.shmoop.com/study-guides/literature/all-the-bright-places,All the Bright Places,Jennifer Niven,First Person (Central Narrators)/ Finch and Violet
+78,https://www.shmoop.com/study-guides/literature/all-the-kings-men,All the King's Men,Robert Penn Warren,First Person (Central/Peripheral Narrator)
+79,https://www.shmoop.com/study-guides/literature/all-the-pretty-horses,All the Pretty Horses,Cormac McCarthy,Third Person (Objective)
+80,https://www.shmoop.com/study-guides/literature/alls-well-that-ends-well,All's Well That Ends Well,William Shakespeare,EXC CODE 1
+81,https://www.shmoop.com/study-guides/literature/allegiant,Allegiant,Veronica Roth,EXC CODE 1
+82,https://www.shmoop.com/study-guides/literature/alligator-bayou,Alligator Bayou,Donna Jo Napoli,First Person (Central)
+83,https://www.shmoop.com/study-guides/literature/american-born-chinese,American Born Chinese,Gene Luen Yang,Third Person (Objective) and First Person (Central Narrator)
+84,https://www.shmoop.com/study-guides/literature/american-pastoral,American Pastoral,Philip Roth,First Person and Third Person (Limited Omniscient)
+85,https://www.shmoop.com/study-guides/literature/among-the-hidden,Among the Hidden,Margaret Peterson Haddix,Third Person (Limited Omniscient)
+86,https://www.shmoop.com/study-guides/literature/an-abundance-of-katherines,An Abundance of Katherines,John Green,Third Person (Omniscient)
+87,https://www.shmoop.com/study-guides/literature/an-american-dream,An American Dream,Norman Mailer,First Person (Central)
+88,https://www.shmoop.com/study-guides/literature/enemy-of-the-people,An Enemy of the People,Henrik Ibsen,EXC CODE 1
+89,https://www.shmoop.com/study-guides/literature/enquiry-concerning-the-principles-of-morals,An Enquiry Concerning the Principles of Morals,David Hume,First Person (Central Narrator)
+90,https://www.shmoop.com/study-guides/literature/an-ideal-husband,An Ideal Husband,Oscar Wilde,EXC CODE 1
+91,https://www.shmoop.com/study-guides/literature/occurrence-owl-creek-bridge,An Occurrence at Owl Creek Bridge,Ambrose Bierce,Third Person (Limited Omniscient)
+92,https://www.shmoop.com/study-guides/literature/and-then-there-were-none,And Then There Were None,Agatha Christie,Third Person (Limited Omniscient)
+93,https://www.shmoop.com/study-guides/literature/hans-christian-andersen,Andersen's Fairy Tales,"Andersen, Hans Christian",That Depends
+94,https://www.shmoop.com/study-guides/literature/angelas-ashes,Angela's Ashes,Frank McCourt,First Person / Central Narrator
+95,https://www.shmoop.com/study-guides/literature/angels-in-america-part-1,"Angels in America, Part One: Millennium Approaches",Tony Kushner,EXC CODE 1
+96,https://www.shmoop.com/study-guides/literature/angels-in-america-part-2,"Angels in America, Part Two: Perestroika",Tony Kushner,EXC CODE 1
+97,https://www.shmoop.com/study-guides/literature/angle-of-repose,Angle of Repose,Wallace Stegner,EXC CODE 1
+98,https://www.shmoop.com/study-guides/literature/angus-thongs-full-frontal-snogging,"Angus, Thongs and Full-Frontal Snogging",Louise Rennison,First Person (Central)
+99,https://www.shmoop.com/study-guides/literature/animal-dreams,Animal Dreams,Barbara Kingsolver,"First Person (Codi and Hallie), and Third-Person (Doc)"
+100,https://www.shmoop.com/study-guides/literature/animal-farm,Animal Farm,George Orwell,Third Person (Omniscient)
+101,https://www.shmoop.com/study-guides/literature/anna-karenina,Anna Karenina,Leo Tolstoy,Third Person (Omniscient)
+102,https://www.shmoop.com/study-guides/literature/anne-of-green-gables,Anne of Green Gables,L.M. Montgomery,Third Person (Omniscient)
+103,https://www.shmoop.com/study-guides/literature/annie-john,Annie John,Jamaica Kincaid,First-Person Narration
+104,https://www.shmoop.com/study-guides/literature/anthem-ayn-rand,Anthem,Ayn Rand,First-Person (Central Narrator)
+105,https://www.shmoop.com/study-guides/literature/antigone-sophocles,Antigone,Sophocles,EXC CODE 1
+106,https://www.shmoop.com/study-guides/literature/arcadia-stoppard,Arcadia,Tom Stoppard,First Person (drama/play)
+107,https://www.shmoop.com/study-guides/literature/are-you-there-god,"Are You There God? It's Me, Margaret.",Judy Blume,First Person / Margaret Simon
+108,https://www.shmoop.com/study-guides/literature/around-the-world-in-eighty-days,Around the World in Eighty Days,Jules Verne,EXC CODE 2
+109,https://www.shmoop.com/study-guides/literature/arrow-of-god,Arrow of God,Chinua Achebe,Third Person (Omniscient)
+110,https://www.shmoop.com/study-guides/literature/arrowsmith,Arrowsmith,Sinclair Lewis,Third-Person Omniscient
+111,https://www.shmoop.com/study-guides/literature/artemis-fowl,Artemis Fowl,Eoin Colfer,"Second Person and Third Person (Omniscient) / Dr. J. Argon, B.Psych"
+112,https://www.shmoop.com/study-guides/literature/as-i-lay-dying,As I Lay Dying,William Faulkner,Fifty-nine sections comprised of fifteen different first person narrators
+113,https://www.shmoop.com/study-guides/literature/as-you-like-it,As You Like It,William Shakespeare,EXC CODE 2
+114,https://www.shmoop.com/study-guides/literature/atlas-shrugged,Atlas Shrugged,Ayn Rand,Third Person (Omniscient)
+115,https://www.shmoop.com/study-guides/literature/atonement,Atonement,Ian McEwan,Variable—Third Person Limited Omniscient/Third Person Universal/First Person (Briony Tallis)
+116,https://www.shmoop.com/study-guides/literature/austenland,Austenland,Shannon Hale,Third Person Limited
+117,https://www.shmoop.com/study-guides/literature/autobiography-of-my-dead-brother,Autobiography of My Dead Brother,Walter Dean Myers,First Person (Central)
+118,https://www.shmoop.com/study-guides/literature/babbitt,Babbitt,Harry Sinclair Lewis,Third-Person Limited (For the Most Part)
+119,https://www.shmoop.com/study-guides/literature/babylon-revisited,Babylon Revisited,F. Scott Fitzgerald,Third Person (Limited Omniscient)
+120,https://www.shmoop.com/study-guides/literature/ballad-of-the-sad-cafe-and-other-stories,Ballad of the Sad Cafe and Other Stories,Carson McCullers,Third Person Omniscient
+121,https://www.shmoop.com/study-guides/literature/barn-burning,Barn Burning,William Faulkner,Third Person (Limited Omniscient)
+122,https://www.shmoop.com/study-guides/literature/bartleby-the-scrivener,Bartleby the Scrivener,Herman Melville,First Person (Central Narrator)
+123,https://www.shmoop.com/study-guides/literature/bastard-out-of-carolina,Bastard Out of Carolina,Dorothy Allison,First Person (Central Narrator) / Bone Boatwright
+124,https://www.shmoop.com/study-guides/literature/beautiful-creatures,Beautiful Creatures,Kami Garcia and Margaret Stohl,EXC CODE 1
+125,https://www.shmoop.com/study-guides/literature/beauty-queens,Beauty Queens,Libba Bray,Third Person (Omniscient)
+126,https://www.shmoop.com/study-guides/literature/because-of-winn-dixie,Because of Winn-Dixie,Kate DiCamillo,First Person (Central Narrator)
+127,https://www.shmoop.com/study-guides/literature/bel-canto,Bel Canto,Ann Patchett,Third-Person (Omniscient)
+128,https://www.shmoop.com/study-guides/literature/belle-praters-boy,Belle Prater's Boy,Ruth White,First Person (Central)
+129,https://www.shmoop.com/study-guides/literature/beloved,Beloved,Toni Morrison,Shift it up
+130,https://www.shmoop.com/study-guides/literature/beneath-a-marble-sky,Beneath a Marble Sky,John Shors,EXC CODE 1
+131,https://www.shmoop.com/study-guides/literature/benito-cereno,Benito Cereno,Herman Melville,"Third Person (Limited
+Omniscient)"
+132,https://www.shmoop.com/study-guides/literature/beowulf,Beowulf,Unknown,Third Person (Omniscient)
+133,https://www.shmoop.com/study-guides/literature/bernice-bobs-her-hair,Bernice Bobs Her Hair,F. Scott Fitzgerald,Third Person (Omniscient)
+134,https://www.shmoop.com/study-guides/literature/bert-breens-barn,Bert Breen's Barn,Walter D. Edmonds,Third-Person Limited Omniscient (Mostly)
+135,https://www.shmoop.com/study-guides/literature/big-little-lies,Big Little Lies,Liane Moriarty,EXC CODE 1
+136,https://www.shmoop.com/study-guides/literature/big-sur-kerouac,Big Sur,Jack Kerouac,First Person (Central Narrator)
+137,https://www.shmoop.com/study-guides/literature/big-two-hearted-river,Big Two-Hearted River (Parts I and II),Ernest Hemingway,Third Person (Limited Omniscient)/Nick
+138,https://www.shmoop.com/study-guides/literature/billy-budd,Billy Budd,Herman Melville,Third Person (Objective)
+139,https://www.shmoop.com/study-guides/literature/billy-lynns-long-halftime-walk,Billy Lynn's Long Halftime Walk,Ben Fountain,Third Person Limited
+140,https://www.shmoop.com/study-guides/literature/bird-by-bird,Bird by Bird,Anne Lamott,"First-Person Central Narrator, with Occasional Second Person"
+141,https://www.shmoop.com/study-guides/literature/black-beauty,Black Beauty,Anna Sewell,First Person (Central)
+142,https://www.shmoop.com/study-guides/literature/black-boy,Black Boy,Richard Wright,First Person (Central Narrator)
+143,https://www.shmoop.com/study-guides/literature/black-like-me,Black Like Me,John Howard Griffin,First Person (Central Narrator):
+144,https://www.shmoop.com/study-guides/literature/black-mass-book,"Black Mass: Whitey Bulger, the FBI, and a Devil's Deal",Dick Lehr and Gerard O'Neill,EXC CODE 1
+145,https://www.shmoop.com/study-guides/literature/bleak-house,Bleak House,Charles Dickens,Third Person (Omniscient) and First Person (Central Narrator)
+146,https://www.shmoop.com/study-guides/literature/bless-me-ultima,"Bless Me, Ultima",Rudolfo Anaya,First Person (Central)
+147,https://www.shmoop.com/study-guides/literature/blood-meridian,Blood Meridian,Cormac McCarthy,Third-Person Omniscient
+148,https://www.shmoop.com/study-guides/literature/blood-red-road,Blood Red Road,Moira Young,EXC CODE 1
+149,https://www.shmoop.com/study-guides/literature/boardwalk-empire-book,Boardwalk Empire,Nelson Johnson,EXC CODE 1
+150,https://www.shmoop.com/study-guides/literature/bomb,Bomb: The Race to Build-and Steal-the Worlds Most Dangerous Weapon,Steve Sheinkin,Third Person
+151,https://www.shmoop.com/study-guides/literature/boy-meets-boy,Boy Meets Boy,David Levithan,First Person/Central Narrator
+152,https://www.shmoop.com/study-guides/literature/brave-new-world,Brave New World,Aldous Huxley,Third Person (Omniscient)
+153,https://www.shmoop.com/study-guides/literature/breakfast-at-tiffanys,Breakfast at Tiffany's,Truman Capote,First Person (Central Narrator)
+154,https://www.shmoop.com/study-guides/literature/breaking-dawn,Breaking Dawn,Stephenie Meyer,EXC CODE 1
+155,https://www.shmoop.com/study-guides/literature/breaking-stalins-nose,Breaking Stalin's Nose,Eugene Yelchin,First Person (Central Narrator)
+156,https://www.shmoop.com/study-guides/literature/breath-eyes-memory,"Breath, Eyes, Memory",Edwidge Danticat,"First-Person, Central Narrator"
+157,https://www.shmoop.com/study-guides/literature/briar-rose,Briar Rose,Jane Yolen,Third Person (Limited Omniscient)
+158,https://www.shmoop.com/study-guides/literature/brideshead-revisited,Brideshead Revisited,Evelyn Waugh,First Person (Central Narrator)
+159,https://www.shmoop.com/study-guides/literature/bridge-to-terabithia,Bridge to Terabithia,Katherine Paterson,Third Person (Limited Omniscient)
+160,https://www.shmoop.com/study-guides/literature/brokeback-mountain,Brokeback Mountain,Annie Proulx,Third-Person Omniscient
+161,https://www.shmoop.com/study-guides/literature/bronx-masquerade,Bronx Masquerade,Nikki Grimes,First Person (Central Narrators)
+162,https://www.shmoop.com/study-guides/literature/brooklyn-a-novel,Brooklyn: A Novel,Colm Tóibín,EXC CODE 1
+163,https://www.shmoop.com/study-guides/literature/bud-not-buddy,"Bud, Not Buddy",Christopher Paul Curtis,First Person (Central) Narrator: Bud
+164,https://www.shmoop.com/study-guides/literature/bullyville,Bullyville,Francine Prose,First Person (Central)
+165,https://www.shmoop.com/study-guides/literature/burn,Burn,Julianna Baggott,EXC CODE 1
+166,https://www.shmoop.com/study-guides/literature/candide,Candide,Voltaire,Third Person (Limited Omniscient)
+167,https://www.shmoop.com/study-guides/literature/cannery-row,Cannery Row,John Steinbeck,Third Person (Omniscient)
+168,https://www.shmoop.com/study-guides/literature/carrie,Carrie,Stephen King,"Third-Person, Multiple P.O.V.s"
+169,https://www.shmoop.com/study-guides/literature/cat-in-the-rain,Cat in the Rain,Ernest Hemingway,"Third Person, Omniscient"
+170,https://www.shmoop.com/study-guides/literature/cat-hot-tin-roof,Cat on a Hot Tin Roof,Tennessee Williams,EXC CODE 2
+171,https://www.shmoop.com/study-guides/literature/cats-cradle-vonnegut,Cat's Cradle,Kurt Vonnegut,First-Person Central Narrator
+172,https://www.shmoop.com/study-guides/literature/catch-22,Catch-22,Joseph Heller,Third Person (Limited Omniscient)
+173,https://www.shmoop.com/study-guides/literature/catching-fire,Catching Fire,Suzanne Collins,EXC CODE 1
+174,https://www.shmoop.com/study-guides/literature/cathedral-carver,Cathedral,Raymond Carver,First Person (Central Narrator)
+175,https://www.shmoop.com/study-guides/literature/ceremony-leslie-marmon-silko,Ceremony,Leslie Marmon Silko,Third Person (Omniscient)
+176,https://www.shmoop.com/study-guides/literature/chains,Chains,Laurie Halse Anderson,First Person / Central Narrator
+177,https://www.shmoop.com/study-guides/literature/charlie-chocolate-factory-book,Charlie and the Chocolate Factory,Roald Dahl,"Third Person (Limited Omniscient), Second Person, and a bit of First Person"
+178,https://www.shmoop.com/study-guides/literature/charlottes-web,Charlotte's Web,E. B. White,Third Person (Omniscient)
+179,https://www.shmoop.com/study-guides/literature/child-44-book,Child 44,Tom Rob Smith,EXC CODE 1
+180,https://www.shmoop.com/study-guides/literature/childhoods-end,Childhood's End,Arthur C. Clarke,Third-Person Omniscient
+181,https://www.shmoop.com/study-guides/literature/chime-book,Chime,Franny Billingsley,First Person (Central Narrator)—Briony
+182,https://www.shmoop.com/study-guides/literature/chomp-book,Chomp,Carl Hiaasen,Third Person (Omniscient)
+183,https://www.shmoop.com/study-guides/literature/chronicle-of-a-death-foretold,Chronicle of a Death Foretold,Gabriel Garcia Marquez,First Person (Peripheral Narrator):
+184,https://www.shmoop.com/study-guides/literature/city-of-ashes,City of Ashes,Cassandra Clare,EXC CODE 1
+185,https://www.shmoop.com/study-guides/literature/city-of-bones-book,City of Bones,Cassandra Clare,EXC CODE 1
+186,https://www.shmoop.com/study-guides/literature/clarissa,Clarissa,Samuel Richardson,"Second Person (With
+Some Complications)"
+187,https://www.shmoop.com/study-guides/literature/cloud-9-play,Cloud 9,Caryl Churchill,Third-Person (Omniscient)
+188,https://www.shmoop.com/study-guides/literature/cloud-atlas,Cloud Atlas,David Mitchell,Multiple Narrators: Conflict of Interest
+189,https://www.shmoop.com/study-guides/literature/code-name-verity,Code Name Verity,Elizabeth Wein,Part 1: First Person (Peripheral/Central Narrator) / Part 2: First Person (Central Narrator)
+190,https://www.shmoop.com/study-guides/literature/code-talker,Code Talker,Chester Nez with Judith Schiess Avila,First Person (Central Narrator)
+191,https://www.shmoop.com/study-guides/literature/cold-mountain,Cold Mountain,Charles Frazier,Third Person Omniscient
+192,https://www.shmoop.com/study-guides/literature/common-sense,Common Sense,Thomas Paine,First-Person
+193,https://www.shmoop.com/study-guides/literature/augustine-confessions,Confessions,Saint Augustine,First Person (Central Narrator)/Augustine
+194,https://www.shmoop.com/study-guides/literature/confessions-of-jean-jacques-rousseau,Confessions of Jean-Jacques Rousseau,Jean-Jacques Rousseau,First Person (Central Narrator)
+195,https://www.shmoop.com/study-guides/literature/coraline-book,Coraline,Neil Gaiman,Third Person Limited
+196,https://www.shmoop.com/study-guides/literature/corduroy,Corduroy,Don Freeman,"Third Person, Omniscient Narrator"
+197,https://www.shmoop.com/study-guides/literature/coriolanus,Coriolanus,William Shakespeare,EXC CODE 1
+198,https://www.shmoop.com/study-guides/literature/crank,Crank,Ellen Hopkins,First Person (Central)
+199,https://www.shmoop.com/study-guides/literature/crash,Crash,Jerry Spinelli,First Person (Central Narrator)
+200,https://www.shmoop.com/study-guides/literature/crazy-rich-asians,Crazy Rich Asians,Kevin Kwan,EXC CODE 1
+201,https://www.shmoop.com/study-guides/literature/crime-and-punishment,Crime and Punishment,Fyodor Dostoevsky,Third Person (Omniscient)
+202,https://www.shmoop.com/study-guides/literature/crispin-cross-of-lead,Crispin: Cross of Lead,Avi,First Person (Central)
+203,https://www.shmoop.com/study-guides/literature/cry-the-beloved-country,"Cry, the Beloved Country",Alan Paton,Third-Person Omniscient Narrator
+204,https://www.shmoop.com/study-guides/literature/cutting-for-stone,Cutting for Stone,Abraham Verghese,EXC CODE 1
+205,https://www.shmoop.com/study-guides/literature/cymbeline,"Cymbeline, King of Britain",William Shakespeare,EXC CODE 1
+206,https://www.shmoop.com/study-guides/literature/cyrano-de-bergerac,Cyrano de Bergerac,Edmond Rostand,EXC CODE 1
+207,https://www.shmoop.com/study-guides/literature/daisy-miller,Daisy Miller,Henry James,First Person Peripheral
+208,https://www.shmoop.com/study-guides/literature/dancing-on-the-edge-book,Dancing on the Edge,Han Nolan,First Person (Central)—Miracle McCloy
+209,https://www.shmoop.com/study-guides/literature/dandelion-wine,Dandelion Wine,Ray Bradbury,Third Person (Limited Omniscient)
+210,https://www.shmoop.com/study-guides/literature/daniel-deronda,Daniel Deronda,George Eliot,First Person (Omniscient)
+211,https://www.shmoop.com/study-guides/literature/dark-matter,Dark Matter,Blake Crouch,EXC CODE 1
+212,https://www.shmoop.com/study-guides/literature/dark-places,Dark Places,Gillian Flynn,First-Person (Libby Day); Third-Person Limited (Ben and Patty Day)
+213,https://www.shmoop.com/study-guides/literature/dark-water,Dark Water,Laura McNeal,First Person (Central)
+214,https://www.shmoop.com/study-guides/literature/das-kapital,Das Kapital,Karl Marx,First Person Omniscient
+215,https://www.shmoop.com/study-guides/literature/daughter-of-smoke-and-bone,Daughter of Smoke & Bone,Laini Taylor,Third Person (Limited Omniscient)
+216,https://www.shmoop.com/study-guides/literature/david-copperfield,David Copperfield,Charles Dickens,First Person (Central Narrator)
+217,https://www.shmoop.com/study-guides/literature/de-daumier-smiths-blue-period,De Daumier-Smith's Blue Period,J.D. Salinger,First Person (Central Narrator)
+218,https://www.shmoop.com/study-guides/literature/dead-end-in-norvelt,Dead End in Norvelt,Jack Gantos,First Person (Central)
+219,https://www.shmoop.com/study-guides/literature/dead-man-walking,Dead Man Walking,Sister Helen Prejean,First person
+220,https://www.shmoop.com/study-guides/literature/dear-mr-henshaw,Dear Mr. Henshaw,Beverly Cleary,First Person (Central Narrator)
+221,https://www.shmoop.com/study-guides/literature/death-and-the-kings-horseman,Death and the King's Horseman,Wole Soyinka,None
+222,https://www.shmoop.com/study-guides/literature/death-comes-for-the-archbishop,Death Comes for the Archbishop,Willa Cather,Third-Person Limited
+223,https://www.shmoop.com/study-guides/literature/death-in-the-woods,Death in the Woods,Sherwood Anderson,First Person (Peripheral Narrator)
+224,https://www.shmoop.com/study-guides/literature/death-in-venice,Death in Venice,Thomas Mann,Third Person (Limited)
+225,https://www.shmoop.com/study-guides/literature/death-of-a-salesman,Death of a Salesman,Arthur Miller,EXC CODE 2
+226,https://www.shmoop.com/study-guides/literature/decameron,Decameron,Giovanni Boccaccio,Various
+227,https://www.shmoop.com/study-guides/literature/delirium-book,Delirium,Lauren Oliver,EXC CODE 1
+228,https://www.shmoop.com/study-guides/literature/diceys-song,Dicey's Song,Cynthia Voigt,Third Person (Limited Omniscient)
+229,https://www.shmoop.com/study-guides/literature/disgrace-coetzee,Disgrace,J.M. Coetzee,Third Person (Limited)
+230,https://www.shmoop.com/study-guides/literature/divergent,Divergent,Veronica Roth,"First Person (Central Narrator): Beatrice ""Tris"" Prior"
+231,https://www.shmoop.com/study-guides/literature/do-androids-dream-of-electric-sheep,Do Androids Dream of Electric Sheep?,Philip K. Dick,Third-person (Limited Omniscient)
+232,https://www.shmoop.com/study-guides/literature/doctor-faustus-marlowe,Doctor Faustus,Christopher Marlowe,EXC CODE 1
+233,https://www.shmoop.com/study-guides/literature/doctor-zhivago,Doctor Zhivago,Boris Pasternak,Third Person Omniscient
+234,https://www.shmoop.com/study-guides/literature/doll-bones,Doll Bones,Holly Black,Third Person (Limited Omniscient)
+235,https://www.shmoop.com/study-guides/literature/don-quixote,Don Quixote,Miguel de Cervantes Saavedra,Third Person (Omniscient)
+236,https://www.shmoop.com/study-guides/literature/dr-heideggers-experiment,Dr. Heidegger's Experiment,Nathaniel Hawthorne,First Person (Peripheral Narrator)
+237,https://www.shmoop.com/study-guides/literature/dracula,Dracula,Bram Stoker,First Person (Multiple Central Narrators)
+238,https://www.shmoop.com/study-guides/literature/dragonwings,Dragonwings,Laurence Yep,First Person (Central Narrator)
+239,https://www.shmoop.com/study-guides/literature/dreaming-in-cuban,Dreaming in Cuban,Cristina García,3rd Person (limited and omniscient); 1st person (central and peripheral)
+240,https://www.shmoop.com/study-guides/literature/dry-september,Dry September,William Faulkner,Third Person (Objective)
+241,https://www.shmoop.com/study-guides/literature/dubliners,Dubliners,James Joyce,First Person and Third Person (Limited Omniscient)
+242,https://www.shmoop.com/study-guides/literature/dune,Dune,Frank Herbert,Third-person Omniscient
+243,https://www.shmoop.com/study-guides/literature/east-of-eden,East of Eden,John Steinbeck,First Person (Peripheral Narrator); John Steinbeck
+244,https://www.shmoop.com/study-guides/literature/eclipse-meyer,Eclipse,Stephenie Meyer,EXC CODE 1
+245,https://www.shmoop.com/study-guides/literature/eleanor-and-park,Eleanor & Park,Rainbow Rowell,Third Person (Limited Omniscient)
+246,https://www.shmoop.com/study-guides/literature/electra-sophocles,Electra,Sophocles,EXC CODE 2
+247,https://www.shmoop.com/study-guides/literature/eleven-sandra-cisneros,Eleven,Sandra Cisneros,First-Person (Central Narrator) / Rachel
+248,https://www.shmoop.com/study-guides/literature/ella-enchanted,Ella Enchanted,Gail Carson Levine,First Person (Central Narrator)
+249,https://www.shmoop.com/study-guides/literature/emma,Emma,Jane Austen,Third Person (Omniscient)
+250,https://www.shmoop.com/study-guides/literature/enders-game,Ender's Game,Orson Scott Card,Third Person (Limited Omniscient)
+251,https://www.shmoop.com/study-guides/literature/endgame,Endgame,Samuel Beckett,EXC CODE 2
+252,https://www.shmoop.com/study-guides/literature/entwined,Entwined,Heather Dixon,EXC CODE 2
+253,https://www.shmoop.com/study-guides/literature/eragon,Eragon,Christopher Paolini,EXC CODE 1
+254,https://www.shmoop.com/study-guides/literature/esperanza-rising,Esperanza Rising,Pam Muñoz Ryan,Third Person (Limited Omniscient)
+255,https://www.shmoop.com/study-guides/literature/ethan-frome,Ethan Frome,Edith Wharton,First Person (Peripheral Narrator); Third Person (Limited Omniscience)
+256,https://www.shmoop.com/study-guides/literature/everneath,Everneath,Brodi Ashton,First Person (Central Narrator)
+257,https://www.shmoop.com/study-guides/literature/everyday-use,Everyday Use,Alice Walker,First Person (Central Character)
+258,https://www.shmoop.com/study-guides/literature/everything-is-illuminated,Everything Is Illuminated,Jonathan Safran Foer,Everything is Obfuscated
+259,https://www.shmoop.com/study-guides/literature/everything-that-rises-must-converge,Everything That Rises Must Converge,Flannery O'Connor,Third Person Subjective
+260,https://www.shmoop.com/study-guides/literature/extremely-loud-and-incredibly-close,Extremely Loud and Incredibly Close,Jonathan Safran Foer,EXC CODE 2
+261,https://www.shmoop.com/study-guides/literature/fablehaven,Fablehaven,Brandon Mull,Third Person (Limited Omniscient—Kendra and some Seth)
+262,https://www.shmoop.com/study-guides/literature/fahrenheit-451,Fahrenheit 451,Ray Bradbury,Third Person (Limited Omniscient)
+263,https://www.shmoop.com/study-guides/literature/fallen,Fallen,Lauren Kate,EXC CODE 1
+264,https://www.shmoop.com/study-guides/literature/fallen-angels,Fallen Angels,Walter Dean Myers,First Person (Central Narrator)
+265,https://www.shmoop.com/study-guides/literature/fangirl,Fangirl,Rainbow Rowell,Third person (Limited Omniscient)
+266,https://www.shmoop.com/study-guides/literature/fantastic-beasts-and-where-to-find-them,Fantastic Beasts and Where to Find Them,J.K. Rowling,First Person (Peripheral Narrator)
+267,https://www.shmoop.com/study-guides/literature/far-from-the-madding-crowd,Far From the Madding Crowd,Thomas Hardy,Third-Person Omniscient
+268,https://www.shmoop.com/study-guides/literature/farewell-to-manzanar,Farewell to Manzanar,Jeanne Wakatsuki Houston and James D. Houston,First Person—Peripheral and Central Narrator—Jeanne
+269,https://www.shmoop.com/study-guides/literature/fathers-and-sons,Fathers and Sons,Ivan Turgenev,Third Person (Omniscient)
+270,https://www.shmoop.com/study-guides/literature/feathers,Feathers,Jacqueline Woodson,First Person (Central)
+271,https://www.shmoop.com/study-guides/literature/feed-book,Feed,M.T. Anderson,First Person
+272,https://www.shmoop.com/study-guides/literature/fences-august-wilson,Fences,August Wilson,EXC CODE 1
+273,https://www.shmoop.com/study-guides/literature/fever-1793,"Fever, 1793",Laurie Halse Anderson,First Person (Central)
+274,https://www.shmoop.com/study-guides/literature/fight-club,Fight Club,Chuck Palahniuk,First-Person (Central Narrator)
+275,https://www.shmoop.com/study-guides/literature/flipped,Flipped,Wendelin Van Draanen,First Person (Central Narrators): Julianna Baker and Bryce Loski
+276,https://www.shmoop.com/study-guides/literature/flora-and-ulysses,Flora and Ulysses,Kate DiCamillo,Third Person (Limited Omniscient)
+277,https://www.shmoop.com/study-guides/literature/flowers-for-algernon,Flowers for Algernon,Daniel Keyes,First Person
+278,https://www.shmoop.com/study-guides/literature/fool-for-love,Fool for Love,Sam Shepard,N/A—It's a drama
+279,https://www.shmoop.com/study-guides/literature/for-esme-with-love-and-squalor,For Esmé with Love and Squalor,J.D. Salinger,"First Person (Central Narrator), then Third Person (Limited Omniscient)"
+280,https://www.shmoop.com/study-guides/literature/for-whom-the-bell-tolls,For Whom the Bell Tolls,Ernest Hemingway,Third Person (Limited Omniscient)
+281,https://www.shmoop.com/study-guides/literature/forgotten-fire,Forgotten Fire,Adam Bagdasarian,First Person (Central)
+282,https://www.shmoop.com/study-guides/literature/foundation-asimov,Foundation,Isaac Asimov,Third-Person Omniscient
+283,https://www.shmoop.com/study-guides/literature/four-divergent,Four,Veronica Roth,"First-Person POV, Tobias ""Four"" Eaton"
+284,https://www.shmoop.com/study-guides/literature/frankenstein,Frankenstein,Mary Shelley,First Person (central narrators); Frame story
+285,https://www.shmoop.com/study-guides/literature/franny-and-zooey,Franny and Zooey,J.D. Salinger,Third Person (Omniscient) and First Person (Peripheral Narrator) who pretends to be Third Person
+286,https://www.shmoop.com/study-guides/literature/freak-the-mighty,Freak the Mighty,Rodman Philbrick,First Person (Central Narrator)
+287,https://www.shmoop.com/study-guides/literature/freedom-franzen,Freedom,Jonathan Franzen,Third Person (Limited Omniscient)
+288,https://www.shmoop.com/study-guides/literature/freewill-chris-lynch,Freewill,Chris Lynch,Second Person
+289,https://www.shmoop.com/study-guides/literature/from-the-earth-to-the-moon,From the Earth to the Moon,Jules Verne,Third Person (Omniscient)
+290,https://www.shmoop.com/study-guides/literature/from-the-mixed-up-files,From the Mixed-Up Files of Mrs. Basil E. Frankweiler,E.L. Konigsburg,First Person (Peripheral Narrator)
+291,https://www.shmoop.com/study-guides/literature/fuse,Fuse,Julianna Baggott,EXC CODE 1
+292,https://www.shmoop.com/study-guides/literature/ghosts-ibsen,Ghosts,Henrik Ibsen,EXC CODE 1
+293,https://www.shmoop.com/study-guides/literature/giants-in-the-earth,Giants in the Earth,Ole Edvard Rölvaag,EXC CODE 2
+294,https://www.shmoop.com/study-guides/literature/gilead,Gilead,Marilynne Robinson,First Person (Central Narrator)
+295,https://www.shmoop.com/study-guides/literature/giovannis-room,Giovanni's Room,James Baldwin,First Person (Central)
+296,https://www.shmoop.com/study-guides/literature/girl-kincaid,Girl,Jamaica Kincaid,First Person (Central Narrator)
+297,https://www.shmoop.com/study-guides/literature/glengarry-glen-ross,Glengarry Glen Ross,David Mamet,EXC CODE 1
+298,https://www.shmoop.com/study-guides/literature/go-ask-alice,Go Ask Alice,"Anonymous, edited by Beatrice Sparks",First Person (Central Narrator)
+299,https://www.shmoop.com/study-guides/literature/go-down-moses,"Go Down, Moses",William Faulkner,Third Person (Omniscient)
+300,https://www.shmoop.com/study-guides/literature/go-set-a-watchman,Go Set a Watchman,Harper Lee,Third Person (Limited Omniscient)
+301,https://www.shmoop.com/study-guides/literature/go-tell-it-on-the-mountain,Go Tell It on the Mountain,James Baldwin,Third Person (Omniscient)
+302,https://www.shmoop.com/study-guides/literature/godless,godless,Pete Hautman,First Person (Central Narrator)
+303,https://www.shmoop.com/study-guides/literature/going-bovine,Going Bovine,Libba Bray,First Person (Central)
+304,https://www.shmoop.com/study-guides/literature/gone-girl,Gone Girl,Gillian Flynn,First Person (Central Narrator)
+305,https://www.shmoop.com/study-guides/literature/gone-with-the-wind,Gone With the Wind,Margaret Mitchell,EXC CODE 1
+306,https://www.shmoop.com/study-guides/literature/good-country-people,Good Country People,Flannery O'Connor,Third Person (Limited Omniscient)
+307,https://www.shmoop.com/study-guides/literature/goodbye-columbus,"Goodbye, Columbus",Philip Roth,First Person (Central Narrator)
+308,https://www.shmoop.com/study-guides/literature/graceling,Graceling,Kristin Cashore,Third Person (Limited Omniscient)
+309,https://www.shmoop.com/study-guides/literature/great-expectations,Great Expectations,Charles Dickens,First Person
+310,https://www.shmoop.com/study-guides/literature/grendel,Grendel,John Gardner,First Person (Central & Peripheral Narrator): Grendel
+311,https://www.shmoop.com/study-guides/literature/grimms-fairy-tales,Grimms' Fairy Tales,Jacob and Wilhelm Grimm,Third Person (Omniscient)
+312,https://www.shmoop.com/study-guides/literature/gullivers-travels,Gulliver's Travels,Jonathan Swift,First Person (Central Narrator)
+313,https://www.shmoop.com/study-guides/literature/hamlet,Hamlet,William Shakespeare,EXC CODE 1
+314,https://www.shmoop.com/study-guides/literature/happy-days-play,Happy Days,Samuel Beckett,EXC CODE 1
+315,https://www.shmoop.com/study-guides/literature/hard-love,Hard Love,Ellen Wittlinger,First Person (Central Narrator)
+316,https://www.shmoop.com/study-guides/literature/hard-times-dickens,Hard Times,Charles Dickens,Third Person (Omniscient)
+317,https://www.shmoop.com/study-guides/literature/harrison-bergeron,Harrison Bergeron,Kurt Vonnegut,Third-Person (Objective)
+318,https://www.shmoop.com/study-guides/literature/harry-potter-2-chamber-secrets,Harry Potter and the Chamber of Secrets,J.K. Rowling,EXC CODE 1
+319,https://www.shmoop.com/study-guides/literature/harry-potter-cursed-child,Harry Potter and the Cursed Child,"Jack Thorne, based on a story by J.K. Rowling, John Tiffany, and Jack Thorne",EXC CODE 1
+320,https://www.shmoop.com/study-guides/literature/harry-potter-7-deathly-hallows,Harry Potter and the Deathly Hallows,J.K. Rowling,EXC CODE 1
+321,https://www.shmoop.com/study-guides/literature/harry-potter-4-goblet-fire,Harry Potter and the Goblet of Fire,J.K. Rowling,EXC CODE 1
+322,https://www.shmoop.com/study-guides/literature/harry-potter-half-blood-prince,Harry Potter and the Half-Blood Prince,J.K. Rowling,EXC CODE 1
+323,https://www.shmoop.com/study-guides/literature/harry-potter-5-order-phoenix,Harry Potter and the Order of the Phoenix,J.K. Rowling,EXC CODE 1
+324,https://www.shmoop.com/study-guides/literature/harry-potter-3-azkaban,Harry Potter and the Prisoner of Azkaban,J.K. Rowling,EXC CODE 1
+325,https://www.shmoop.com/study-guides/literature/harry-potter-sorcerers-stone,Harry Potter and the Sorcerer's Stone,J.K. Rowling,EXC CODE 1
+326,https://www.shmoop.com/study-guides/literature/hatchet-paulsen,Hatchet,Gary Paulsen,Third Person (Limited Omniscient)
+327,https://www.shmoop.com/study-guides/literature/having-our-say,Having Our Say,Sarah and A. Elizabeth Delany with Amy Hill Hearth,EXC CODE 1
+328,https://www.shmoop.com/study-guides/literature/heart-of-a-samurai,Heart of a Samurai,Margi Preus,Third Person (Limited Omniscient)
+329,https://www.shmoop.com/study-guides/literature/heart-of-darkness,Heart of Darkness,Joseph Conrad,"First person (Peripheral Narrator), First Person (Central Narrator)"
+330,https://www.shmoop.com/study-guides/literature/hedda-gabler,Hedda Gabler,Henrik Ibsen,EXC CODE 2
+331,https://www.shmoop.com/study-guides/literature/heist-society,Heist Society,Ally Carter,EXC CODE 1
+332,https://www.shmoop.com/study-guides/literature/henry-iv-part-1,Henry IV Part 1,William Shakespeare,EXC CODE 1
+333,https://www.shmoop.com/study-guides/literature/henry-iv-part-2,Henry IV Part 2,William Shakespeare,EXC CODE 1
+334,https://www.shmoop.com/study-guides/literature/henry-v,Henry V,William Shakespeare,EXC CODE 1
+335,https://www.shmoop.com/study-guides/literature/henry-vi-part-1,Henry VI Part 1,William Shakespeare,EXC CODE 2
+336,https://www.shmoop.com/study-guides/literature/henry-vi-part-2,Henry VI Part 2,William Shakespeare,EXC CODE 1
+337,https://www.shmoop.com/study-guides/literature/henry-vi-part-3,Henry VI Part 3,William Shakespeare,EXC CODE 1
+338,https://www.shmoop.com/study-guides/literature/henry-viii,Henry VIII,William Shakespeare,EXC CODE 1
+339,https://www.shmoop.com/study-guides/literature/here-be-monsters,"Here Be Monsters! An Adventure Involving Magic, Trolls, and Other Creatures; The Ratbridge Chronicles Volume 1",Alan Snow,Third Person (Limited Omniscient)
+340,https://www.shmoop.com/study-guides/literature/here-we-are-dorothy-parker,Here We Are,Dorothy Parker,Third Person (Objective)
+341,https://www.shmoop.com/study-guides/literature/herzog,Herzog,Saul Bellow,Third-Person (Limited Omniscient)
+342,https://www.shmoop.com/study-guides/literature/hills-like-white-elephants,Hills Like White Elephants,Ernest Hemingway,Third Person (Objective)
+343,https://www.shmoop.com/study-guides/literature/hiroshima-book,Hiroshima,John Hersey,Third Person (Objective)
+344,https://www.shmoop.com/study-guides/literature/hold-me-closer-necromancer,"Hold Me Closer, Necromancer",Lish McBride,First Person and Third Person (Omniscient)
+345,https://www.shmoop.com/study-guides/literature/holes,Holes,Louis Sachar,"Third Person (Limited Omniscient), with a few flashes of Third Person (Omniscient) and one or two moments of Second Person"
+346,https://www.shmoop.com/study-guides/literature/homecoming-book,Homecoming,Cynthia Voigt,Third Person (Limited Omniscient)
+347,https://www.shmoop.com/study-guides/literature/homeless-bird,Homeless Bird,Gloria Whelan,First Person (Central)
+348,https://www.shmoop.com/study-guides/literature/hoot,Hoot,Carl Hiaasen,Third Person (Limited Omniscient)
+349,https://www.shmoop.com/study-guides/literature/hope-was-here,Hope Was Here,Joan Bauer,First Person/Central Narrator
+350,https://www.shmoop.com/study-guides/literature/hotel-on-the-corner-of-bitter-and-sweet,Hotel on the Corner of Bitter and Sweet,Jamie Ford,Third Person (Limited Omniscient)
+351,https://www.shmoop.com/study-guides/literature/how-i-live-now,How I Live Now,Meg Rosoff,First Person (Central)—Daisy
+352,https://www.shmoop.com/study-guides/literature/how-the-garcia-girls-lost-their-accents,How the García Girls Lost Their Accents,Julia Alvarez,"Third Person, Omniscient; First Person, Central Narrator"
+353,https://www.shmoop.com/study-guides/literature/howards-end,Howards End,E.M. Forster,Third Person (Omniscient) – with the occasional odd lapse
+354,https://www.shmoop.com/study-guides/literature/howls-moving-castle,Howl's Moving Castle,Diana Wynne Jones,Third Person Omniscient
+355,https://www.shmoop.com/study-guides/literature/hush-jacqueline-woodson,hush,Jacqueline Woodson,First Person (Central Narrator)
+356,https://www.shmoop.com/study-guides/literature/hush-hush,"Hush, Hush",Becca Fitzpatrick,(Central)… With a Twist
+357,https://www.shmoop.com/study-guides/literature/hyperion,Hyperion,Dan Simmons,Multiple P.O.V.s
+358,https://www.shmoop.com/study-guides/literature/i-am-the-cheese,I Am the Cheese,Robert Cormier,First Person (Central Narrator) and Third Person (Limited Omniscient)
+359,https://www.shmoop.com/study-guides/literature/i-am-the-messenger,I Am the Messenger,Markus Zusak,First Person (Central Narrator)
+360,https://www.shmoop.com/study-guides/literature/i-know-this-much-is-true,I Know This Much is True,Wally Lamb,EXC CODE 1
+361,https://www.shmoop.com/study-guides/literature/i-know-why-the-caged-bird-sings,I Know Why the Caged Bird Sings,Maya Angelou,First Person (Central Narrator)
+362,https://www.shmoop.com/study-guides/literature/i-never-promised-you-a-rose-garden,I Never Promised You a Rose Garden,Joanne Greenberg (originally published under the pseudonym Hannah Green),Third Person (Omniscient)
+363,https://www.shmoop.com/study-guides/literature/i-stand-here-ironing,I Stand Here Ironing,Tillie Olsen,First Person (Central Narrator)
+364,https://www.shmoop.com/study-guides/literature/ill-give-you-the-sun,I'll Give You The Sun,Jandy Nelson,First Person (Central Narrator) / Jude and Noah Sweetwine
+365,https://www.shmoop.com/study-guides/literature/i-robot,"I, Robot",Isaac Asimov,First Person (Peripheral Narrator)—The Journalist; Third Person (Omniscient)
+366,https://www.shmoop.com/study-guides/literature/idylls-of-the-king,Idylls of the King,"Alfred, Lord Tennyson",Third-Person Omniscient
+367,https://www.shmoop.com/study-guides/literature/if-i-stay,If I Stay,Gayle Forman,EXC CODE 1
+368,https://www.shmoop.com/study-guides/literature/if-on-a-winters-night-a-traveler,If on a winter's night a traveler,Italo Calvino,"Third-Person Omniscient, Second-Person Limited, First-Person Limited"
+369,https://www.shmoop.com/study-guides/literature/if-only-book,If Only,Carole Geithner,First Person (Central Narrator)
+370,https://www.shmoop.com/study-guides/literature/in-cold-blood,In Cold Blood,Truman Capote,Third Person (Omniscient)
+371,https://www.shmoop.com/study-guides/literature/in-darkness,In Darkness,Nick Lake,First Person (Central)
+372,https://www.shmoop.com/study-guides/literature/in-dubious-battle,In Dubious Battle,John Steinbeck,Third Person (Objective)
+373,https://www.shmoop.com/study-guides/literature/in-the-heart-of-the-sea,In the Heart of the Sea,Nathaniel Philbrick,EXC CODE 1
+374,https://www.shmoop.com/study-guides/literature/penal-colony,In the Penal Colony,Franz Kafka,Third Person (Limited Omniscient)
+375,https://www.shmoop.com/study-guides/literature/in-the-time-of-the-butterflies,In the Time of the Butterflies,"Alvarez, Julia",Varies
+376,https://www.shmoop.com/study-guides/literature/in-the-woods,In The Woods,Tana French,EXC CODE 1
+377,https://www.shmoop.com/study-guides/literature/in-the-year-of-the-boar-and-jackie-robinson,In the Year of the Boar and Jackie Robinson,Bette Bao Lord,Third Person (Objective)
+378,https://www.shmoop.com/study-guides/literature/incidents-life-slave-girl,Incidents in the Life of a Slave Girl,Harriet Jacobs,First Person (Central Narrator)
+379,https://www.shmoop.com/study-guides/literature/indian-camp,Indian Camp,Ernest Hemingway,Third Person (Limited Omniscient)/Nick
+380,https://www.shmoop.com/study-guides/literature/inferno,Inferno,Dante Alighieri,First Person (Central Narrator): Dante
+381,https://www.shmoop.com/study-guides/literature/infinity-chronicles-of-nick,Infinity: Chronicles of Nick,Sherrilyn Kenyon,EXC CODE 1
+382,https://www.shmoop.com/study-guides/literature/inherit-the-wind,Inherit the Wind,Jerome Lawrence and Robert E. Lee,EXC CODE 1
+383,https://www.shmoop.com/study-guides/literature/inkheart,Inkheart,Cornelia Funke,Third Person (Limited Omniscient)
+384,https://www.shmoop.com/study-guides/literature/inside-out-and-back-again,Inside Out & Back Again,Thanhha Lai,First Person (Central)—Hà
+385,https://www.shmoop.com/study-guides/literature/insurgent,Insurgent,Veronica Roth,EXC CODE 1
+386,https://www.shmoop.com/study-guides/literature/interpreter-of-maladies,Interpreter of Maladies,Jhumpa Lahiri,Third Person (Limited Omniscient)
+387,https://www.shmoop.com/study-guides/literature/interview-with-the-vampire,Interview with the Vampire,Anne Rice,Third-Person Limited: Look Who's Talking
+388,https://www.shmoop.com/study-guides/literature/into-thin-air,Into Thin Air,Jon Krakauer,EXC CODE 1
+389,https://www.shmoop.com/study-guides/literature/invisible-man-ellison,Invisible Man,Ralph Ellison,First Person (Central Narrator)
+390,https://www.shmoop.com/study-guides/literature/island-blue-dolphins,Island of the Blue Dolphins,Scott O'Dell,First Person (Central)
+391,https://www.shmoop.com/study-guides/literature/it,It,Stephen King,EXC CODE 1
+392,https://www.shmoop.com/study-guides/literature/ivanhoe,Ivanhoe,Sir Walter Scott,Third Person (Omniscient)
+393,https://www.shmoop.com/study-guides/literature/jacob-have-i-loved,Jacob Have I Loved,Katherine Paterson,First Person (Central)
+394,https://www.shmoop.com/study-guides/literature/jane-eyre,Jane Eyre,Charlotte Brontë,First Person (Central Narrator)
+395,https://www.shmoop.com/study-guides/literature/jazz-toni-morrison,Jazz,Toni Morrison,Third Person (Omniscient) / First Person (Central Narrator) / First Person (Peripheral Narrator)
+396,https://www.shmoop.com/study-guides/literature/jellicoe-road,Jellicoe Road,Melina Marchetta,First Person (Central)
+397,https://www.shmoop.com/study-guides/literature/johnny-got-his-gun,Johnny Got His Gun,Dalton Trumbo,Third Person (Limited Omniscient) / Joe
+398,https://www.shmoop.com/study-guides/literature/johnny-tremain,Johnny Tremain,Esther Forbes,Third Person (Limited Omniscient)
+399,https://www.shmoop.com/study-guides/literature/joseph-andrews,Joseph Andrews,Henry Fielding,Third Person Omniscient
+400,https://www.shmoop.com/study-guides/literature/jude-the-obscure,Jude the Obscure,Thomas Hardy,Third Person Omniscient
+401,https://www.shmoop.com/study-guides/literature/julie-of-the-wolves,Julie of the Wolves,Jean Craighead George,Third Person (Limited Omniscient)
+402,https://www.shmoop.com/study-guides/literature/julius-caesar,Julius Caesar,William Shakespeare,EXC CODE 1
+403,https://www.shmoop.com/study-guides/literature/jumped,Jumped,Rita Williams-Garcia,First Person (Central Narrator)
+404,https://www.shmoop.com/study-guides/literature/jurassic-park-book,Jurassic Park,Michael Crichton,EXC CODE 1
+405,https://www.shmoop.com/study-guides/literature/just-listen-sarah-dessen,Just Listen,Sarah Dessen,First Person (Central Narrator)
+406,https://www.shmoop.com/study-guides/literature/kaffir-boy,Kaffir Boy,Mark Mathabane,First Person (Central Narrator)
+407,https://www.shmoop.com/study-guides/literature/kew-gardens-virginia-woolf,Kew Gardens,Virginia Woolf,"Third Person
+(Omniscient)"
+408,https://www.shmoop.com/study-guides/literature/kidnapped,Kidnapped,Robert Louis Stevenson,First Person (Central Narrator)
+409,https://www.shmoop.com/study-guides/literature/kim-rudyard-kipling,Kim,Rudyard Kipling,Third-Person Omniscient Narrator
+410,https://www.shmoop.com/study-guides/literature/kindred,Kindred,Octavia Estelle Butler,First-Person (Central Narrator)
+411,https://www.shmoop.com/study-guides/literature/king-john,King John,William Shakespeare,EXC CODE 1
+412,https://www.shmoop.com/study-guides/literature/king-lear,King Lear,William Shakespeare,EXC CODE 1
+413,https://www.shmoop.com/study-guides/literature/king-of-the-bingo-game,King of the Bingo Game,Ralph Ellison,Third Person (Limited Omniscient)
+414,https://www.shmoop.com/study-guides/literature/lady-chatterleys-lover,Lady Chatterley's Lover,D.H. Lawrence,Third Person Omniscient
+415,https://www.shmoop.com/study-guides/literature/last-of-the-mohicans,Last of the Mohicans,James Fenimore Cooper,Third Person (Objective)
+416,https://www.shmoop.com/study-guides/literature/morte-d-arthur,Le Morte D'Arthur,Sir Thomas Malory,Third person (Omniscient)
+417,https://www.shmoop.com/study-guides/literature/legend-marie-lu,Legend,Marie Lu,First Person (Central Narrator)
+418,https://www.shmoop.com/study-guides/literature/dangerous-liaisons,Les Liaisons dangereuses (Dangerous Liaisons),Pierre Ambroise François Choderlos de Laclos,Multiple First Person Narrators
+419,https://www.shmoop.com/study-guides/literature/les-miserables,Les Misérables,Victor Hugo,Third-Person Omniscient
