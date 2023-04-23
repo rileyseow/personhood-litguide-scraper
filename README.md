@@ -12,15 +12,16 @@ Scraping Specifications:
     - Title
     - Author
     - POV
-        - "EXC CODE 1": Link to a POV page for the novel was not found in the LH navbar
-        - "EXC CODE 2": Link to a POV page for the novel was found, but was not succinctly summarized in a header. Usually involves long paragraph description text on the POV page. Recommended: manual correction during data clean-up.
 - Character csv headers:
     - Novel ID
     - Character URL
     - Character Name
     - Character Description
+- Error codes:
+    - "EXC CODE 1": Relevant value was not found
+    - "EXC CODE 2": Relevant value was found, but is otherwise complicated. May involve longer paragraph text than expected, be found in a different location than expected, etc. Recommended: manual correction during data clean-up.
 
-Uses imports requests, csv, re, and BeautifulSoup (https://beautiful-soup-4.readthedocs.io/en/latest/).
+Uses imports requests, csv, re, charset_normalizer, and BeautifulSoup (https://beautiful-soup-4.readthedocs.io/en/latest/) with SoupStrainer.
 
 Originally written for the Literary Lab as part of a CESTA internship (Summer 2020). Being redone now for practice purposes.
 

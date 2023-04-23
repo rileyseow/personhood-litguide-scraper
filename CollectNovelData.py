@@ -2,8 +2,9 @@
 File: Scrapes selected data from all novels on the Shmoop Literature Study Guides website.
       Creates and writes to csv file.
 
-Global TODOs: (1) implement error-checking
-              (2) improve efficiency with profiler
+Global TODOs: Improve efficiency with profiler
+              Potential leads: Switch out requests library for an async one
+                               Switch out bs4 for lxml entirely
 """
 
 import requests
@@ -67,6 +68,8 @@ def main():
     header = ["Novel ID", "Novel URL", "Title", "Author", "POV"]
     writeCSV(writer, header)
 
+    print("Initializing scrape...")
+
     # Go through all pages of Literature Study Guides (95x)
     for i in range(1, 96):
         page_url = root_url + "/index/?p=" + str(i)
@@ -77,6 +80,7 @@ def main():
         soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["a", "div"]))
 
         # Find all novel URLs and titles on the page
+        # All novels scraped will have URLs and titles, so no error checking required
         urls = soup.findAll("a", class_="details")
         titles = soup.findAll("div", class_="item-info")
 
@@ -88,7 +92,7 @@ def main():
             ch = [id, novel_url, title.text.strip()]
 
             # Print status data to console
-            if id % 5 == 0: print("scraping novel ", str(id))
+            if id % 10 == 0: print("ID ", str(id))
             # Increment Novel ID counter
             id += 1
 
@@ -99,7 +103,10 @@ def main():
             soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["span", "div"]))
 
             # Look for author info
-            author = soup.find("span", class_="author-name").text.strip()
+            try:
+                author = soup.find("span", class_="author-name").text.strip()
+            except:
+                author = "EXC CODE 1"
             ch.append(author)
 
             # Look for POV info
