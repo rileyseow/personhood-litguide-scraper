@@ -3,7 +3,7 @@ File: Scrapes selected character data from all novels on the Shmoop Literature S
       Creates and records data to shmoop_character_data.csv.
       Should be run after a complete and successful run of CollectNovelData.py
 
-Global TODOs: Finish basic implementation. Add error checking. Run on entire dataset.
+Global TODOs: Run on entire dataset.
 """
 
 import requests
@@ -66,17 +66,23 @@ def main():
     print("Initializing scrape...")
 
     # For each novel...
-    #for novel in CSVNovelData:
     for novel in CSVNovelData[:3]:
-        # Generate BeautifulSoup object to parse the novel page for Character Name and Character Info
+        # Generate BeautifulSoup object to parse the novel page for Character Name and Character URL info
         # Use SoupStrainer to limit parsing to the LH nav bar
         response = requests_session.get(novel[1])
         html = response.text
         soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer("div", class_="nav-menu"))
 
         # Find all character tag elements
-        parent = soup.find("a", href=re.compile("characters$")).find_next()
-        characterElems = parent.findAll("li", class_=None)
+        try:
+            parent = soup.find("a", href=re.compile("characters$")).find_next()
+            characterElems = parent.findAll("li", class_=None)
+        except:
+            characterElems = "EXC CODE 1"
+
+        # Print status data to console
+        currNovel = CSVNovelData.index(novel)
+        if currNovel % 5 == 0: print("Novel ID ", str(currNovel))
 
         # For each character...
         for character in characterElems:
@@ -88,16 +94,17 @@ def main():
             # Store the first three values in a list: Novel ID, Character Name, and Character URL
             ch = [novel[0], name, url]
 
-            """
-            # Generate BeautifulSoup object to parse the character page URL for Character Description info
+            # Generate BeautifulSoup object to parse the character's page for Character Description info
             response = requests_session.get(url)
             html = response.text
-            soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(_____))
+            soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer("div", class_="content-wrapper"))
 
-            # Find description info and append to row data
-            desc = soup.find(_____)
+            # Find description info (raw HTML, no cleanup) and append to row data
+            try:
+                desc = soup.findChild().findChild()
+            except:
+                desc = "EXC CODE 2"
             ch.append(desc)
-            """
 
             # Write entire row of character data to shmoop_character_data.csv
             writeCSV(writer, ch)
