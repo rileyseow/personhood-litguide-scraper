@@ -7,38 +7,13 @@ Global TODOs: Improve efficiency with profiler
                                Switch out bs4 for lxml entirely
 """
 
-import requests
+import asyncio
+import aiohttp
+import time
 from bs4 import BeautifulSoup, SoupStrainer
 import csv
 import re
 import charset_normalizer
-
-"""
-Function: findNovelPov
-Description: Finds Novel POV data if exists
-Parameters: BeautifulSoup object (to parse), requests Session object to make a get request
-Return: String with POV Description
-        "EXC CODE 1" if POV href cannot be found
-        "EXC CODE 2" if POV href exists but is not defined succinctly (requires manually navigating to 
-        the POV page and looking at description paragraph text)
-"""
-def scrapePOVData(soupObj, requests_session):
-    pov_url = soupObj.find("a", href=re.compile("narrator-point-of-view$"))
-    if pov_url is None: return "EXC CODE 1"
-
-    pov_url = pov_url.get("href")
-    # Account for relative hrefs
-    if (pov_url[0] == '/'):
-        pov_url = "https://www.shmoop.com" + pov_url
-
-    # Navigate to the POV page
-    response = requests_session.get(pov_url)
-    html = response.text
-    soupObj = BeautifulSoup(html, "lxml", parse_only=SoupStrainer("h3"))
-
-    pov = soupObj.find("h3")
-    if pov is None: return "EXC CODE 2"
-    return pov.text.strip()
 
 
 """
@@ -55,29 +30,54 @@ def writeCSV(writer, row):
     return 0
 
 
-def main():
-    # Initialize values
+"""
+Function: downloadLink
+Description: Uses asyncio / aiohttp library to download a url passed as an argument
+Parameters: aiohttp.ClientSession() object, string (url to download)
+Return: HTML text of one URL page
+"""
+async def downloadLink(session, url):
+    async with session.get(url) as resp:
+        html = await resp.text()
+        return html
+
+
+async def main():
+    # Initialize values: Root URL and Novel ID counter
     root_url = "https://www.shmoop.com/study-guides/literature"
-    # Novel ID counter
     id = 0
-    # Requests Session Object for all get requests
-    requests_session = requests.Session()
-    # CSV file with headers
+    dataToWrite = []
+    novelURLs = []
+    POVURLs = []
+
+    # Open CSV file with headers to write to
     f = open("shmoop_novel_data.csv", "w")
     writer = csv.writer(f)
     header = ["Novel ID", "Novel URL", "Title", "Author", "POV"]
     writeCSV(writer, header)
 
-    print("Initializing scrape...")
+    start_time = time.time()
+    print(f"[{round(time.time() - start_time, 4)}s] (+5s) Initializing scrape of all Literature Study Guide catalog pages...")
 
-    # Go through all pages of Literature Study Guides (95x)
-    for i in range(1, 96):
-        page_url = root_url + "/index/?p=" + str(i)
+    # Use asyncio to download all Literature Study Guide catalog pages (95x)
+    # Note: Can toggle limit of aiohttp simultaneous connections between 10-20 (default 100).
+    # If blocked from server, try reducing limit.)
+    my_conn = aiohttp.TCPConnector(limit=20, ssl=False)
+    # Increase the timeout from default 300s to 600s.
+    my_timeout = aiohttp.ClientTimeout(total=600)
+    async with aiohttp.ClientSession(connector=my_conn, timeout=my_timeout) as session:
+        tasks = []
+        for i in range(1, 96):
+            page_url = root_url + "/index/?p=" + str(i)
+            tasks.append(asyncio.ensure_future(downloadLink(session, page_url)))
+        studyGuidePageHTMLs = await asyncio.gather(*tasks, return_exceptions=True)
 
-        # Generate BeautifulSoup object to parse the page
-        response = requests_session.get(page_url)
-        html = response.text
-        soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["a", "div"]))
+    print(f"[{round(time.time() - start_time, 4)}s] (+2s) Logging Novel URL and Novel Title data...")
+
+    for pageHTML in studyGuidePageHTMLs:
+        # Generate BeautifulSoup object to parse the catalog page for Novel URL and Novel Title info
+        # Use SoupStrainer to limit parsing to link and div tag elements
+        soup = BeautifulSoup(pageHTML, "lxml", parse_only=SoupStrainer(["a", "div"]))
 
         # Find all novel URLs and titles on the page
         # All novels scraped will have URLs and titles, so no error checking required
@@ -89,38 +89,83 @@ def main():
             novel_url = url.get("href")
 
             # Store the first three values in a list: ID, URL, and Title
-            ch = [id, novel_url, title.text.strip()]
+            dataToWrite.append([id, novel_url, title.text.strip()])
+            novelURLs.append(novel_url)
 
-            # Print status data to console
-            if id % 10 == 0: print("ID ", str(id))
             # Increment Novel ID counter
             id += 1
 
-            # Navigate to each novel's page with BeautifulSoup
-            # Then add Author and POV to the list of values
-            response = requests_session.get(novel_url)
-            html = response.text
-            soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["span", "div"]))
+    print(f"[{round(time.time() - start_time, 4)}s] (+1min) Initializing scrape of all novel pages...")
 
-            # Look for author info
-            try:
-                author = soup.find("span", class_="author-name").text.strip()
-            except:
-                author = "EXC CODE 1"
-            ch.append(author)
+    # Use asyncio to download all novel pages
+    my_conn2 = aiohttp.TCPConnector(limit=20, ssl=False)
+    async with aiohttp.ClientSession(connector=my_conn2, timeout=my_timeout) as session2:
+        tasks2 = [asyncio.ensure_future(downloadLink(session2, url)) for url in novelURLs]
+        novelHTMLs = await asyncio.gather(*tasks2, return_exceptions=True)
 
-            # Look for POV info
-            # Narrows down HTML area to LH nav bar for parsing
-            analysisBarSoupObj = soup.find("div", class_="nav-menu")
-            pov = scrapePOVData(analysisBarSoupObj, requests_session)
-            ch.append(pov)
+    print(f"[{round(time.time() - start_time, 4)}s] (+18s) Logging novel author data...")
 
-            # Write the entire row of data to the CSV file
-            writeCSV(writer, ch)
+    for novel, html in zip(dataToWrite, novelHTMLs):
+        # Generate BeautifulSoup object to parse the novel page for Author and POV info
+        soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer(["span", "div"]))
+
+        # Find author and append to row data
+        try:
+            author = soup.find("span", class_="author-name").text.strip()
+        except:
+            author = "EXC CODE 1"
+        novel.append(author)
+
+        # Find POV page URL, if exists
+        analysisBarSoupObj = soup.find("div", class_="nav-menu")
+        pov_url = analysisBarSoupObj.find("a", href=re.compile("narrator-point-of-view$"))
+
+        if pov_url is None:
+            novel.append("EXC CODE 1")
+        else:
+            pov_url = pov_url.get("href")
+            # Account for relative hrefs
+            if (pov_url[0] == '/'):
+                pov_url = "https://www.shmoop.com" + pov_url
+            POVURLs.append(pov_url)
+            novel.append("placeholder")
+
+    print(f"[{round(time.time() - start_time, 4)}s] (+55s) Initializing scrape of all novel POV pages...")
+
+    # Use asyncio to download all POV pages
+    my_conn3 = aiohttp.TCPConnector(limit=20, ssl=False)
+    async with aiohttp.ClientSession(connector=my_conn3, timeout=my_timeout) as session3:
+        tasks3 = [asyncio.ensure_future(downloadLink(session3, url)) for url in POVURLs]
+        POVHTMLs = await asyncio.gather(*tasks3, return_exceptions=True)
+
+    print(f"[{round(time.time() - start_time, 4)}s] (+13s) Logging novel POV data...")
+
+    # Logs "EXC CODE 1" if POV href cannot be found and
+    #      "EXC CODE 2" if POV href exists but is not defined succinctly
+    #      (requires manually navigating to the POV page and looking at description paragraph text)
+    i = 0
+    for novel in dataToWrite:
+        if novel[-1] == "EXC CODE 1":
+            continue
+        else:
+            # Generate BeautifulSoup object to parse the POV page for POV description data
+            soup = BeautifulSoup(POVHTMLs[i], "lxml")
+            i += 1
+            pov = soup.find("h3")
+            if pov is None: novel[-1] = "EXC CODE 2"
+            else: novel[-1] = pov.text.strip()
+
+    print(f"[{round(time.time() - start_time, 4)}s] (+0s) Initializing data read-out...")
+
+    # Write out all rows of character data to shmoop_novel_data.csv
+    for row in dataToWrite:
+        writeCSV(writer, row)
 
     # Close the CSV file
     f.close()
 
+    print(f"[{round(time.time() - start_time, 4)}s] (+0s) Finished.")
+
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

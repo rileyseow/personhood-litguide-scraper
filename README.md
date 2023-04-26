@@ -21,7 +21,6 @@ Scraping Specifications:
     - "EXC CODE 1": Relevant value was not found
     - "EXC CODE 2": Relevant value was found, but is otherwise complicated. May involve longer paragraph text than expected, be found in a different location than expected, etc. Recommended: manual correction during data clean-up.
 - Expansions in progress:
-    - Rewriting CollectNovelData.py to use asynchronous HTTP request libraries (optimization)
     - Replacing bs4 scraping with the lower-level lxml library (optimization)
     - Expanding scraper to other study guide websites: LitCharts, SparkNotes, and CliffNotes (scalability)
 
