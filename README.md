@@ -23,6 +23,7 @@ Scraping Specifications:
 - Expansions in progress:
     - Expanding scraper to other study guide websites: LitCharts, SparkNotes, and CliffNotes (scalability)
     - Decompose main function into separate functions / files; have one main file to run both CollectNovelData.py and CollectCharacterData.py (structure)
+
 Uses imports asyncio, aiohttp, time, csv, re, charset_normalizer, and BeautifulSoup (https://beautiful-soup-4.readthedocs.io/en/latest/) with SoupStrainer.
 
 Originally written for the Literary Lab as part of a CESTA internship (Summer 2020). Being redone now for practice purposes.
