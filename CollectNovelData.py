@@ -1,9 +1,6 @@
 """
 File: Scrapes selected data from all novels on the Shmoop Literature Study Guides website.
       Creates and records data to shmoop_novel_data.csv.
-
-Global TODOs: Improve efficiency with profiler
-              Potential leads: Switch out bs4 for lxml entirely
 """
 
 import asyncio

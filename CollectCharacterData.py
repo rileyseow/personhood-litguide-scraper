@@ -2,14 +2,12 @@
 File: Scrapes selected character data from all novels on the Shmoop Literature Study Guides website.
       Creates and records data to shmoop_character_data.csv.
       Should be run after a complete and successful run of CollectNovelData.py
-
-Global TODOs: Improve efficiency (see CollectNovelData.py header comment)
 """
 
 import asyncio
 import aiohttp
 import time
-from bs4 import BeautifulSoup, SoupStrainer
+import lxml.html
 import csv
 import re
 import charset_normalizer
@@ -84,7 +82,7 @@ async def main():
     # Flatten list since readCSV will return a list of lists but we only read in one column
     CSVNovelURLs = [url for subList in CSVNovelURLs for url in subList]
 
-    print(f"[{round(time.time() - start_time, 4)}s] (+30-40s) Initializing scrape of all novel homepages...")
+    print(f"[{round(time.time() - start_time, 4)}s] (+18s) Initializing scrape of all novel homepages...")
 
     # Use asyncio to download all novel pages
     # Note: Can toggle limit of aiohttp simultaneous connections between 10-20 (default 100).
@@ -96,42 +94,41 @@ async def main():
         tasks = [asyncio.ensure_future(downloadLink(session, url)) for url in CSVNovelURLs]
         novelHTMLs = await asyncio.gather(*tasks, return_exceptions=True)
 
-    print(f"[{round(time.time() - start_time, 4)}s] (+10s) Logging Character Name and Character URL data...")
+    print(f"[{round(time.time() - start_time, 4)}s] (+3s) Logging Character Name and Character URL data...")
 
     for page in novelHTMLs:
-        # Generate BeautifulSoup object to parse the novel page for Character Name and Character URL info
-        # Use SoupStrainer to limit parsing to the LH nav bar
-        soup = BeautifulSoup(page, "lxml", parse_only=SoupStrainer("div", class_="nav-menu"))
+        # Use lxml to parse the novel page for Character Name and Character URL info
+        root = lxml.html.fromstring(page)
 
         # Find all character tag elements
-        try:
-            parent = soup.find("a", href=re.compile("characters$")).find_next()
-            characterElems = parent.findAll("li", class_=None)
-        except:
-            characterElems = ["EXC CODE 1"]
+        characterElems = root.xpath("//a[contains(@href, 'characters')]/following-sibling::ul[1]/li[not(@class)]")
+        if len(characterElems) == 0:
+            characterElems = ["EXC CODE 2"]
 
         # Find name and URL info for each character
         for character in characterElems:
-            if character == "EXC CODE 1":
-                name = "EXC CODE 1"
-                url = "EXC CODE 1"
+            if character == "EXC CODE 2":
+                name = "EXC CODE 2"
+                url = "EXC CODE 2"
             else:
                 # Edge case: "The Princess Bride" incorrectly lists William Goldman (the author) as a character.
                 # Clicking his name leads to a dead ERR_TOO_MANY_REDIRECTS page and crashes this code.
                 # Thus, do not identify him as a character.
-                if character.find("a").get("href").endswith("william-goldman"): continue
+                if character.xpath("./a/@href")[0].endswith("william-goldman"): continue
 
-                name = character.text.strip()
-                url = character.find("a").get("href")
+                name = character.xpath("./a/descendant-or-self::*/text()")
+                name = "".join(name).strip()
+                url = character.xpath("./a/@href")[0]
                 if url[0] == '/': url = "https://www.shmoop.com" + url
+
+                characterURLs.append(url)
 
             # Store the first three values in a list: Novel ID, Character Name, and Character URL
             dataToWrite.append([novelID, name, url])
-            characterURLs.append(url)
 
         novelID += 1
 
-    print(f"[{round(time.time() - start_time, 4)}s] (+4-5mins) Initializing scrape of all character pages...")
+    print(f"[{round(time.time() - start_time, 4)}s] (+3.5mins) Initializing scrape of all character pages...")
 
     # Use asyncio to download all character pages
     my_conn2 = aiohttp.TCPConnector(limit=20, ssl=False)
@@ -139,21 +136,29 @@ async def main():
         tasks2 = [asyncio.ensure_future(downloadLink(session2, url)) for url in characterURLs]
         characterHTMLs = await asyncio.gather(*tasks2, return_exceptions=True)
 
-    print(f"[{round(time.time() - start_time,4)}s] (+1-2mins) Logging character description data...")
+    print(f"[{round(time.time() - start_time,4)}s] (+45s) Logging character description data...")
 
-    for character, html in zip(dataToWrite, characterHTMLs):
-        # Generate BeautifulSoup object to parse the character's page for Character Description info
-        soup = BeautifulSoup(html, "lxml", parse_only=SoupStrainer("div", class_="content-wrapper"))
+    cHTMLsIndex = 0
+    for character in dataToWrite:
+        if character[1] == "EXC CODE 2":
+            character.append("EXC CODE 2")
+            continue
+        else:
+            # Use lxml to parse the character's page for Character Description info
+            root = lxml.html.fromstring(characterHTMLs[cHTMLsIndex])
 
-        # Find description info (raw HTML, no cleanup) and append to row data
-        try:
-            desc = soup.findChild().findChild()
-        except:
-            desc = "EXC CODE 2"
+            # Find description info (raw HTML, no cleanup) and append to row data
+            desc = root.xpath("//div[@class='content-wrapper']/*[1]")
+            if len(desc) == 0:
+                character.append("EXC CODE 2")
+            else:
+                desc = desc[0].xpath("./descendant-or-self::*/text()")
+                desc = "".join(desc).strip()
+                character.append(desc)
 
-        character.append(desc)
+            cHTMLsIndex += 1
 
-    print(f"[{round(time.time() - start_time, 4)}s] (+2s) Initializing data read-out...")
+    print(f"[{round(time.time() - start_time, 4)}s] (+1s) Initializing data read-out...")
 
     # Write out all rows of character data to shmoop_character_data.csv
     for row in dataToWrite:
