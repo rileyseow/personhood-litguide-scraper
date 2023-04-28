@@ -152,9 +152,7 @@ async def main():
             if len(desc) == 0:
                 character.append("EXC CODE 2")
             else:
-                desc = desc[0].xpath("./descendant-or-self::*/text()")
-                desc = "".join(desc).strip()
-                character.append(desc)
+                character.append(lxml.html.tostring(desc[0], encoding='unicode', method='html').replace("\r\n", ""))
 
             cHTMLsIndex += 1
 
