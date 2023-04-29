@@ -82,7 +82,7 @@ async def main():
     # Flatten list since readCSV will return a list of lists but we only read in one column
     CSVNovelURLs = [url for subList in CSVNovelURLs for url in subList]
 
-    print(f"[{round(time.time() - start_time, 4)}s] (+18s) Initializing scrape of all novel homepages...")
+    print(f"[{round(time.time() - start_time, 4)}s] (+25s) Initializing scrape of all novel homepages...")
 
     # Use asyncio to download all novel pages
     # Note: Can toggle limit of aiohttp simultaneous connections between 10-20 (default 100).
@@ -152,7 +152,12 @@ async def main():
             if len(desc) == 0:
                 character.append("EXC CODE 2")
             else:
-                character.append(lxml.html.tostring(desc[0], encoding='unicode', method='html').replace("\r\n", ""))
+                # Raw HTML
+                descStr = lxml.html.tostring(desc[0], encoding='unicode', method='html')
+                # Minimal cleanup: Shmoop's random line-breaks
+                descStr = descStr.replace("\r\n", " ").replace("\n", " ").replace("  ", " ")
+                # Append to row data
+                character.append(descStr)
 
             cHTMLsIndex += 1
 
